@@ -1,0 +1,15 @@
+USE LibraryDB;
+ALTER TABLE Books
+ADD publisher VARCHAR(100);
+ALTER TABLE Books
+MODIFY price DECIMAL(12,2);
+ALTER TABLE Books
+DROP COLUMN publisher;
+CREATE TABLE TestTable (
+id INT,
+name VARCHAR(50)
+);
+DROP TABLE TestTable;
+DESC Books;
+SELECT * FROM Books;
+
